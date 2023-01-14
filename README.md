@@ -8,4 +8,8 @@ One more time...
 - Make color mode work in appDir.
 - Prisma.
 - PlanetScale.
+- About the whole techStack
+- About me
+- Resume/CV behind Auth.
+- Dashboard for adding content.
 - Editor.js adding for own content.
