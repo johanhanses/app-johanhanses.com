@@ -1,7 +1,8 @@
+import { prisma } from '@/lib/prisma'
+import { User } from '@prisma/client'
+import bcrypt from 'bcrypt'
 import NextAuth from 'next-auth'
 import CredentialProvider from 'next-auth/providers/credentials'
-import bcrypt from 'bcrypt'
-import { prisma } from '@/lib/prisma'
 
 export default NextAuth({
   providers: [
@@ -39,13 +40,15 @@ export default NextAuth({
     strategy: 'jwt'
   },
   callbacks: {
-    jwt: ({ token, user, account, profile, isNewUser }) => {
+    jwt: ({ token, user }) => {
       if (user) token.user = user
 
       return token
     },
     session: ({ session, token }) => {
-      if (token) session.user = token
+      if (token && session) {
+        session.user = { name: (token.user as User).username }
+      }
 
       return session
     }

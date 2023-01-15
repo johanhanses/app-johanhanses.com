@@ -8,7 +8,7 @@ export const AuthButton = () => {
   if (session) {
     return (
       <>
-        Signed in as {session.user?.user.username} <br />
+        Signed in as {session?.user?.name} <br />
         <button onClick={() => signOut()}>Sign out</button>
       </>
     )

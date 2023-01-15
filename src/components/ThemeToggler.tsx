@@ -2,15 +2,11 @@
 
 import useMounted from '@/hooks/useMounted'
 import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
-import { useSession } from 'next-auth/react'
 import { useTheme } from 'next-themes'
 
 export const ThemeToggler = () => {
   const mounted = useMounted()
   const { theme, setTheme } = useTheme()
-
-  const { data: session } = useSession()
-  console.log(session)
 
   if (!mounted) return null
   if (theme === 'dark')
