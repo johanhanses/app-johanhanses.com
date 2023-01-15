@@ -6,8 +6,8 @@ One more time...
 - ~Tailwind-Prettier or eslint from antfu?~
 - Make next auth work in appDir.
 - ~Make color mode work in appDir.~
-- Prisma.
-- PlanetScale.
+- ~Prisma.~
+- ~PlanetScale.~
 - About the whole techStack
 - About me
 - Resume/CV behind Auth.
