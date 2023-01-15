@@ -9,7 +9,7 @@ One more time...
 - ~Prisma.~
 - ~PlanetScale.~
 - Refactor auth to lib
-- Make all components namned exports
+- ~Make all components namned exports~
 - About the whole techStack
 - About me
 - Resume/CV behind Auth.

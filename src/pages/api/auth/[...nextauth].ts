@@ -8,7 +8,6 @@ export default NextAuth({
   providers: [
     CredentialProvider({
       name: 'credentials',
-
       credentials: {
         username: {
           label: 'Username',
@@ -17,7 +16,6 @@ export default NextAuth({
         },
         password: { label: 'Password', type: 'password' }
       },
-
       async authorize(credentials) {
         const user = await prisma.user.findUnique({
           where: {
@@ -42,14 +40,10 @@ export default NextAuth({
   callbacks: {
     jwt: ({ token, user }) => {
       if (user) token.user = user
-
       return token
     },
     session: ({ session, token }) => {
-      if (token && session) {
-        session.user = { name: (token.user as User).username }
-      }
-
+      if (token && session) session.user = { name: (token.user as User).username }
       return session
     }
   }

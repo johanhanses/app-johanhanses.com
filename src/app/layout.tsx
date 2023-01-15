@@ -1,4 +1,4 @@
-import AuthSessionProvider from '@/components/AuthSessionProvider'
+import { AuthSessionProvider } from '@/components/AuthSessionProvider'
 import { ColorThemeProvider } from '@/components/ColorThemeProvider'
 import { Noto_Serif_Display } from '@next/font/google'
 import './globals.css'
