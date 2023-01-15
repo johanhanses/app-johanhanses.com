@@ -8,6 +8,8 @@ One more time...
 - ~Make color mode work in appDir.~
 - ~Prisma.~
 - ~PlanetScale.~
+- Refactor auth to lib
+- Make all components namned exports
 - About the whole techStack
 - About me
 - Resume/CV behind Auth.
