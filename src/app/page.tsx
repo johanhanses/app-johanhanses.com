@@ -1,3 +1,10 @@
+import { ThemeToggler } from '@/components/ThemeToggler'
+
 export default function Home() {
-  return <h1 className="text-2xl">Hej</h1>
+  return (
+    <div>
+      <h1 className="text-2xl font-bold">JH</h1>
+      <ThemeToggler />
+    </div>
+  )
 }

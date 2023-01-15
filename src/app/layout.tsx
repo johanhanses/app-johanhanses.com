@@ -1,3 +1,4 @@
+import { ColorThemeProvider } from '@/components/ColorThemeProvider'
 import { Noto_Serif_Display } from '@next/font/google'
 import './globals.css'
 
@@ -11,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head />
       <body className={`min-h-screen ${notoSerifDisplay.variable} px-6 font-notoSerifDisplay antialiased`}>
-        {children}
+        <ColorThemeProvider>{children}</ColorThemeProvider>
       </body>
     </html>
   )
