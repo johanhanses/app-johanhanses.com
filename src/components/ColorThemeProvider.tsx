@@ -8,5 +8,5 @@ export const ColorThemeProvider = ({ children }: { children: ReactNode }) => {
   const mounted = useMounted()
 
   if (mounted) return <ThemeProvider attribute="class">{children}</ThemeProvider>
-  return <>{children}</>
+  return null
 }

@@ -9,13 +9,13 @@ export const AuthButton = () => {
     return (
       <>
         Signed in as {session?.user?.name} <br />
-        <button onClick={() => signOut()}>Sign out</button>
+        <button onClick={() => signOut()}>Log out</button>
       </>
     )
   }
   return (
     <>
-      <button onClick={() => signIn()}>Sign in</button>
+      <button onClick={() => signIn()}>Log in</button>
     </>
   )
 }

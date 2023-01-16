@@ -1,14 +1,12 @@
-import { AuthButton } from '@/components/AuthButton'
-import { ThemeToggler } from '@/components/ThemeToggler'
+const content = new Array(100).fill(1).map((_, i) => (
+  <div
+    className="text-3xl"
+    key={i}
+  >
+    HEJ {i}
+  </div>
+))
 
 export default async function Home() {
-  return (
-    <div>
-      <h1 className="text-2xl font-bold">JH</h1>
-      <div>
-        <ThemeToggler />
-      </div>
-      <AuthButton />
-    </div>
-  )
+  return <>{content}</>
 }
