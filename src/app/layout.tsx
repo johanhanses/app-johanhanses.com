@@ -1,16 +1,16 @@
 import { AuthSessionProvider } from '@/components/AuthSessionProvider'
 import { ColorThemeProvider } from '@/components/ColorThemeProvider'
 import { Header } from '@/components/Header'
-import { Jura, Noto_Serif_Display } from '@next/font/google'
+import { Karla, Playfair_Display } from '@next/font/google'
 import './globals.css'
 
-const notoSerifDisplay = Noto_Serif_Display({
-  variable: '--noto-serif-display',
+const playfair = Playfair_Display({
+  variable: '--playfair',
   subsets: ['latin']
 })
 
-const jura = Jura({
-  variable: '--jura',
+const karla = Karla({
+  variable: '--karla',
   subsets: ['latin']
 })
 
@@ -20,12 +20,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <AuthSessionProvider>
         <body
-          className={`min-h-screen ${notoSerifDisplay.variable} ${jura.variable} bg-stone-200 px-6 font-jura text-black antialiased dark:bg-stone-800 dark:text-white`}
+          className={`min-h-screen ${playfair.variable} ${karla.variable} bg-zinc-50 font-karla text-black antialiased dark:bg-black dark:text-white sm:px-8`}
         >
           <ColorThemeProvider>
-            <div className="mx-auto min-h-screen max-w-6xl border-x-[1px] border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
+            <div className=" mx-auto w-full max-w-7xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 lg:px-8">
               <Header />
-              <main className="px-6 py-32">{children}</main>
+              <main className="px-4 py-32 sm:px-8">{children}</main>
             </div>
           </ColorThemeProvider>
         </body>

@@ -12,9 +12,8 @@ module.exports = {
         yellow: '#FFD65B'
       },
       fontFamily: {
-        notoSerifDisplay: ['var(--noto-serif-display)'],
-        jura: ['var(--jura)']
-        // raleway: ['var(--raleway)']
+        playfair: ['var(--playfair)'],
+        karla: ['var(--karla)']
       }
     }
   },
