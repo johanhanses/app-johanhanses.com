@@ -39,22 +39,24 @@ export const Header = () => {
   )
 
   return (
-    <div className="fixed flex w-full max-w-7xl">
-      <motion.header
-        style={{
-          height: useTransform(scrollYBoundedProgressThrottled, [0, 1], [96, 0]),
-          opacity: useTransform(scrollYBoundedProgressThrottled, [0, 1], [1, 0])
-        }}
-        className="relative z-40 flex w-full items-center justify-end gap-4 overflow-hidden px-4 sm:px-8 md:justify-center lg:px-12 xl:px-20"
-      >
-        <Menu menuItems={menuItems} />
+    <header className="absolute left-0 right-0 h-24 w-full max-w-7xl sm:-ml-4 md:ml-0">
+      <div className="fixed h-24 w-full max-w-7xl">
+        <motion.div
+          style={{
+            height: useTransform(scrollYBoundedProgressThrottled, [0, 1], [96, 0]),
+            opacity: useTransform(scrollYBoundedProgressThrottled, [0, 1], [1, 0])
+          }}
+          className="flex h-24 w-full max-w-7xl items-center justify-end gap-4 px-4 sm:px-8 md:relative md:justify-center"
+        >
+          <Menu menuItems={menuItems} />
 
-        <MobileMenu menuItems={menuItems} />
+          <MobileMenu menuItems={menuItems} />
 
-        {/* <AuthButton /> */}
-        <ThemeToggler />
-      </motion.header>
-    </div>
+          {/* <AuthButton /> */}
+          <ThemeToggler />
+        </motion.div>
+      </div>
+    </header>
   )
 }
 2

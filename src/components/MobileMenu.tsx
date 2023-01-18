@@ -14,13 +14,14 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
   return (
     <Menu>
       {({ open, close }) => (
-        <>
-          <Menu.Button className="absolute right-20 flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 sm:right-24 md:hidden">
-            Menu
-            <ChevronDownIcon className="ml-2 h-3 w-3" />
-          </Menu.Button>
-          <MotionConfig transition={{ duration: 0.2 }}>
-            <AnimatePresence>
+        <MotionConfig transition={{ duration: 0.2 }}>
+          <AnimatePresence>
+            <>
+              <Menu.Button className="flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 md:hidden">
+                Menu
+                <ChevronDownIcon className="ml-2 h-3 w-3" />
+              </Menu.Button>
+
               {open && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -28,10 +29,10 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                   exit={{ opacity: 0 }}
                   className="md:hidden"
                 >
-                  <div className="fixed inset-0 z-50 bg-zinc-800/40 opacity-100 backdrop-blur-sm dark:bg-black/80" />
+                  <div className="fixed inset-0 bg-zinc-800/40 opacity-100 backdrop-blur-sm dark:bg-black/80" />
                   <Menu.Items
                     as="nav"
-                    className="fixed inset-x-4 top-8 z-50 origin-top scale-100 overflow-hidden rounded-3xl bg-white p-8 opacity-100 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
+                    className="fixed inset-x-4 top-8 origin-top scale-100 overflow-hidden rounded-3xl bg-white p-8 opacity-100 ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-zinc-800"
                   >
                     <div className="flex justify-end">
                       <button onClick={close}>
@@ -58,9 +59,9 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                   </Menu.Items>
                 </motion.div>
               )}
-            </AnimatePresence>
-          </MotionConfig>
-        </>
+            </>
+          </AnimatePresence>
+        </MotionConfig>
       )}
     </Menu>
   )
