@@ -17,7 +17,7 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
         <MotionConfig transition={{ duration: 0.2 }}>
           <AnimatePresence>
             <>
-              <Menu.Button className="flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 md:hidden">
+              <Menu.Button className="flex items-center rounded-full bg-white/90 px-4 py-2 text-base font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20 md:hidden">
                 Menu
                 <ChevronDownIcon className="ml-2 h-3 w-3" />
               </Menu.Button>
