@@ -23,21 +23,19 @@ const links = [
   }
 ]
 
-export const Socials = () => {
-  return (
-    <div className="flex items-center gap-6">
-      {links.map((link) => (
-        <Link
-          key={link.url}
-          href={link.url}
-          title={link.title}
-          target="_blank"
-          rel="noreferrer"
-          className="group"
-        >
-          {link.icon}
-        </Link>
-      ))}
-    </div>
-  )
-}
+export const Socials = () => (
+  <div className="flex items-center gap-6">
+    {links.map((link) => (
+      <Link
+        key={link.url}
+        href={link.url}
+        title={link.title}
+        target="_blank"
+        rel="noreferrer"
+        className="group"
+      >
+        {link.icon}
+      </Link>
+    ))}
+  </div>
+)
