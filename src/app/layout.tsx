@@ -23,9 +23,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           className={`min-h-screen ${playfair.variable} ${karla.variable} bg-zinc-50 font-karla text-black antialiased dark:bg-black dark:text-white sm:px-8`}
         >
           <ColorThemeProvider>
-            <div className=" mx-auto w-full max-w-7xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
+            <div className="mx-auto min-h-screen w-full max-w-7xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 sm:px-0">
               <Header />
-              <main className="px-4 py-32 sm:px-8">{children}</main>
+              <main className="px-4 py-32 sm:px-8 lg:px-12 xl:px-20">{children}</main>
             </div>
           </ColorThemeProvider>
         </body>

@@ -45,7 +45,7 @@ export const Header = () => {
           height: useTransform(scrollYBoundedProgressThrottled, [0, 1], [96, 0]),
           opacity: useTransform(scrollYBoundedProgressThrottled, [0, 1], [1, 0])
         }}
-        className="relative flex w-full items-center justify-end gap-4 overflow-hidden px-4 sm:px-8 md:justify-center lg:px-12"
+        className="relative z-40 flex w-full items-center justify-end gap-4 overflow-hidden px-4 sm:px-8 md:justify-center lg:px-12 xl:px-20"
       >
         <Menu menuItems={menuItems} />
 

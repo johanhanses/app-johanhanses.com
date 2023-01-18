@@ -26,7 +26,7 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="z-10 md:hidden"
+                  className="md:hidden"
                 >
                   <div className="fixed inset-0 z-50 bg-zinc-800/40 opacity-100 backdrop-blur-sm dark:bg-black/80" />
                   <Menu.Items

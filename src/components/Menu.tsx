@@ -13,7 +13,7 @@ export const Menu = ({ menuItems }: MenuProps) => {
           <li key={item.title}>
             <Link
               href={item.url}
-              className="relative block px-3 py-2 transition hover:text-yellow dark:hover:text-yellow"
+              className="relative block px-3 py-2 transition-colors duration-300 hover:text-yellow"
             >
               {item.title}
             </Link>
