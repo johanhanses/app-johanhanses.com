@@ -12,6 +12,7 @@ One more time...
 - ~Make all components namned exports~
 - About the whole techStack
 - About me
+- Active pages highlight in menu
 - Resume/CV behind Auth.
 - Dashboard for adding content.
 - Editor.js adding for own content.

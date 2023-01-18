@@ -46,9 +46,8 @@ export default NextAuth({
       if (token && session) session.user = { name: (token.user as User).username }
       return session
     }
+  },
+  pages: {
+    signIn: '/login'
   }
-
-  // pages: {
-  //   signIn: '/auth/login/'
-  // }
 })
