@@ -1,43 +1,62 @@
 import { getToken } from 'next-auth/jwt'
-import { withAuth } from 'next-auth/middleware'
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 
-export default withAuth(
-  async function middleware(req) {
-    const token = await getToken({ req })
-    const isAuth = !!token
-    const isAuthPage = req.nextUrl.pathname.startsWith('/login')
+const PUBLIC_FILE = /\.(.*)$/
 
-    if (isAuthPage) {
-      if (isAuth) {
-        return NextResponse.redirect(new URL('/cv', req.url))
-      }
+export default async function middleware(req: NextRequest) {
+  const token = await getToken({ req })
+  const isAuth = !!token
+  console.log(isAuth)
+  // const isAuthPage = req.nextUrl.pathname.startsWith('/login')
+  const { pathname } = req.nextUrl
 
-      return null
-    }
-
-    if (!isAuth) {
-      let from = req.nextUrl.pathname
-      if (req.nextUrl.search) {
-        from += req.nextUrl.search
-      }
-
-      return NextResponse.redirect(new URL(`/login?from=${encodeURIComponent(from)}`, req.url))
-    }
-  },
-  {
-    callbacks: {
-      async authorized() {
-        // This is a work-around for handling redirect on auth pages.
-        // We return true here so that the middleware function above
-        // is always called.
-        return true
-      }
-    }
+  if (
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/static') ||
+    pathname.startsWith('/login') ||
+    pathname === '/' ||
+    pathname.startsWith('/about') ||
+    PUBLIC_FILE.test(pathname)
+  ) {
+    return NextResponse.next()
   }
-)
 
-export const config = {
-  // matcher: ['/dashboard/:path*', '/editor/:path*', '/login', '/register']
-  matcher: ['/dashboard', '/cv', '/login']
+  // if (isAuthPage) {
+  //   if (isAuth) {
+  //     return NextResponse.redirect(new URL('/cv', req.url))
+  //   }
+
+  //   return null
+  // }
+
+  if (!isAuth) {
+    console.log('here')
+    // let from = req.nextUrl.pathname
+    // if (req.nextUrl.search) {
+    //   from += req.nextUrl.search
+    // }
+
+    req.nextUrl.pathname = '/login'
+    return NextResponse.redirect(req.nextUrl)
+
+    // return NextResponse.redirect(new URL(`/login?from=${encodeURIComponent(from)}`, req.url))
+  }
+
+  return NextResponse.next()
 }
+// {
+//   callbacks: {
+//     async authorized() {
+//       // This is a work-around for handling redirect on auth pages.
+//       // We return true here so that the middleware function above
+//       // is always called.
+//       return true
+//     }
+//   }
+// }
+
+// export const config = {
+//   // matcher: ['/dashboard/:path*', '/editor/:path*', '/login', '/register']
+//   matcher: ['/dashboard', '/cv', '/login']
+// }

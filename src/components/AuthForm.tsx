@@ -1,7 +1,7 @@
 'use client'
 
 import { signIn } from 'next-auth/react'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { FormEvent, useState } from 'react'
 import { Button } from './Form/Button'
 import { Input } from './Form/Input'
@@ -15,7 +15,6 @@ export const AuthForm = () => {
   })
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-  const searchParams = useSearchParams()
   const router = useRouter()
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -31,8 +30,7 @@ export const AuthForm = () => {
 
       if (response && response.ok) {
         setLoading(false)
-        router.refresh()
-        return router.push(searchParams.get('from') || '/cv')
+        return router.push('/cv')
       }
 
       setError('Wrong credentials...')
