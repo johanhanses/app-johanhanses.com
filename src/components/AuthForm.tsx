@@ -51,7 +51,7 @@ export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
   return (
     <>
       <form
-        className="mx-auto w-full sm:w-1/2 md:w-1/3"
+        className="mx-auto w-full space-y-2 sm:w-1/2 md:w-1/3"
         onSubmit={handleSubmit}
       >
         <Input
