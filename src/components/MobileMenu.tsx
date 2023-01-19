@@ -3,6 +3,7 @@
 import { Menu } from '@headlessui/react'
 import { ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { AnimatePresence, motion, MotionConfig } from 'framer-motion'
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { MenuItems } from './Header'
 
@@ -11,6 +12,8 @@ interface MobileMenuProps {
 }
 
 export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
+  const { data: session } = useSession()
+
   return (
     <Menu>
       {({ open, close }) => (
@@ -54,6 +57,28 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                             </Link>
                           </Menu.Item>
                         ))}
+                        {!session ? (
+                          <Link
+                            onClick={close}
+                            href="/login"
+                            className="block py-2"
+                          >
+                            Log in
+                          </Link>
+                        ) : (
+                          <button
+                            onClick={async () => {
+                              await signOut({
+                                callbackUrl: `${window.location.origin}`,
+                                redirect: false
+                              })
+                              close()
+                            }}
+                            className="block py-2"
+                          >
+                            Log out
+                          </button>
+                        )}
                       </div>
                     </motion.div>
                   </Menu.Items>

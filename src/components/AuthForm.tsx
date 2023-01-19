@@ -1,16 +1,14 @@
 'use client'
 
-import { signIn, useSession } from 'next-auth/react'
-import { useRouter } from 'next/navigation'
-import { FormEvent, useEffect, useState } from 'react'
+import { signIn } from 'next-auth/react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { FormEvent, useState } from 'react'
 import { Button } from './Form/Button'
 import { Input } from './Form/Input'
 import { Spinner } from './Spinner'
 import { Toast } from './Toast'
 
 export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
-  const router = useRouter()
-  const { status } = useSession()
   const [values, setValues] = useState({
     csrfToken,
     username: '',
@@ -18,10 +16,8 @@ export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
   })
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-
-  useEffect(() => {
-    if (status === 'authenticated') router.push('/')
-  }, [router, status])
+  const searchParams = useSearchParams()
+  const router = useRouter()
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     setLoading(true)
@@ -36,7 +32,8 @@ export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
 
       if (response && response.ok) {
         setLoading(false)
-        return router.push('/')
+        router.refresh()
+        return router.push(searchParams.get('from') || '/cv')
       }
 
       setError('Wrong credentials...')
@@ -51,7 +48,7 @@ export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
   return (
     <>
       <form
-        className="mx-auto w-full space-y-2 sm:w-1/2 md:w-1/3"
+        className="mx-auto w-full space-y-2 sm:w-1/2 lg:w-1/3"
         onSubmit={handleSubmit}
       >
         <Input
@@ -66,7 +63,7 @@ export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
         />
         <Input
           required
-          toggleVisibility
+          togglevisibility={true.toString()}
           name="password"
           disabled={loading}
           placeholder="Password"

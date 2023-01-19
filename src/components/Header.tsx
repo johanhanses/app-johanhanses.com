@@ -2,7 +2,6 @@
 
 import { useBoundedScroll } from '@/hooks/useBoundedScroll'
 import { motion, useTransform } from 'framer-motion'
-import { AuthButton } from './AuthButton'
 import { Menu } from './Menu'
 import { MobileMenu } from './MobileMenu'
 import { ThemeToggler } from './ThemeToggler'
@@ -20,6 +19,10 @@ const menuItems: MenuItems[] = [
   {
     title: 'About',
     url: '/about'
+  },
+  {
+    title: 'Dashboard',
+    url: '/dashboard'
   },
   {
     title: 'CV',
@@ -46,10 +49,7 @@ export const Header = () => {
           className="flex h-24 w-full max-w-7xl items-center justify-end gap-4 px-4 sm:px-8 md:relative md:justify-center"
         >
           <Menu menuItems={menuItems} />
-
           <MobileMenu menuItems={menuItems} />
-
-          <AuthButton />
           <ThemeToggler />
         </motion.div>
       </div>

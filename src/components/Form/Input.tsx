@@ -1,9 +1,7 @@
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline'
 import { ComponentPropsWithoutRef, useState } from 'react'
 
-export const Input = (
-  props: ComponentPropsWithoutRef<'input'> & { toggleVisibility?: boolean }
-) => {
+export const Input = (props: ComponentPropsWithoutRef<'input'> & { togglevisibility?: string }) => {
   const [passwordVisible, setPasswordVisible] = useState(false)
 
   return (
@@ -14,12 +12,12 @@ export const Input = (
         className="block"
       >
         <input
-          type={props.toggleVisibility && !passwordVisible ? 'password' : 'text'}
+          type={props.togglevisibility && !passwordVisible ? 'password' : 'text'}
           className="placeholder:text-zinc-40 w-full flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
           {...props}
         />
       </label>
-      {props.toggleVisibility && (
+      {props.togglevisibility && (
         <button
           type="button"
           onClick={() => setPasswordVisible(!passwordVisible)}
