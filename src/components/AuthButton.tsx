@@ -9,7 +9,15 @@ export const AuthButton = () => {
     return (
       <>
         Signed in as {session?.user?.name} <br />
-        <button onClick={() => signOut()}>Log out</button>
+        <button
+          onClick={() =>
+            signOut({
+              callbackUrl: `${window.location.origin}`
+            })
+          }
+        >
+          Log out
+        </button>
       </>
     )
   }
