@@ -8,9 +8,8 @@ import { Input } from './Form/Input'
 import { Spinner } from './Spinner'
 import { Toast } from './Toast'
 
-export const AuthForm = ({ csrfToken }: { csrfToken: string }) => {
+export const AuthForm = () => {
   const [values, setValues] = useState({
-    csrfToken,
     username: '',
     password: ''
   })
