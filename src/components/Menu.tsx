@@ -2,6 +2,7 @@
 
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { MenuItems } from './Header'
 
 interface MenuProps {
@@ -10,6 +11,7 @@ interface MenuProps {
 
 export const Menu = ({ menuItems }: MenuProps) => {
   const { data: session } = useSession()
+  const pathname = usePathname()
 
   return (
     <nav className="hidden md:block">
@@ -18,9 +20,15 @@ export const Menu = ({ menuItems }: MenuProps) => {
           <li key={item.title}>
             <Link
               href={item.url}
-              className="block px-3 py-2 transition-colors duration-300 hover:text-yellow"
+              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-yellow ${
+                pathname === item.url && 'text-yellow'
+              }`}
             >
-              {item.title}
+              {pathname === item.url ? (
+                <span className="border-b border-yellow/40 pb-[11px]">{item.title}</span>
+              ) : (
+                <>{item.title}</>
+              )}
             </Link>
           </li>
         ))}
@@ -28,9 +36,15 @@ export const Menu = ({ menuItems }: MenuProps) => {
           {!session ? (
             <Link
               href="/login"
-              className="block px-3 py-2 transition-colors duration-300 hover:text-yellow"
+              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-yellow ${
+                pathname === '/login' && 'text-yellow'
+              }`}
             >
-              Log in
+              {pathname === '/login' ? (
+                <span className="border-b border-yellow/40 pb-[11px]">Log in</span>
+              ) : (
+                <>Log in</>
+              )}
             </Link>
           ) : (
             <button

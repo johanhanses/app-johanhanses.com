@@ -8,11 +8,11 @@ One more time...
 - ~Make color mode work in appDir.~
 - ~Prisma.~
 - ~PlanetScale.~
-- Refactor auth to lib
+- ~Refactor auth to lib~
 - ~Make all components namned exports~
 - About the whole techStack
 - About me
-- Active pages highlight in menu
-- Resume/CV behind Auth.
+- ~Active pages highlight in menu~
+- ~Resume/CV behind Auth.~
 - Dashboard for adding content.
 - Editor.js adding for own content.
