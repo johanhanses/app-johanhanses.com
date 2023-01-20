@@ -2,7 +2,7 @@ import { Socials } from '@/components/Socials'
 import Image from 'next/image'
 import me from '../../public/joag2.jpg'
 
-export default async function Home() {
+export default function Home() {
   return (
     <div className="lg:w-2/3">
       <Image

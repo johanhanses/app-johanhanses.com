@@ -1,6 +1,6 @@
 import { DashboardHeader } from '@/components/DashboardHeader'
 
-export default async function Dashboard() {
+export default function Dashboard() {
   return (
     <div>
       <DashboardHeader />
