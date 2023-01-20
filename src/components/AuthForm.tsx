@@ -31,7 +31,7 @@ export const AuthForm = () => {
       if (response && response.ok) {
         setLoading(false)
         return router.refresh()
-        // return router.push('/cv')
+        // return router.push('/dashboard')
       }
 
       setError('Wrong credentials...')

@@ -23,10 +23,6 @@ const menuItems: MenuItems[] = [
   {
     title: 'Dashboard',
     url: '/dashboard'
-  },
-  {
-    title: 'CV',
-    url: '/cv'
   }
 ]
 
