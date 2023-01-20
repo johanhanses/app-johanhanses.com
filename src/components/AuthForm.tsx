@@ -1,8 +1,8 @@
 'use client'
 
-import { signIn } from 'next-auth/react'
+import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import { FormEvent, useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import { Button } from './Form/Button'
 import { Input } from './Form/Input'
 import { Spinner } from './Spinner'
@@ -16,6 +16,11 @@ export const AuthForm = () => {
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const router = useRouter()
+  const session = useSession()
+
+  useEffect(() => {
+    if (session.status === 'authenticated') return router.push('/dashboard')
+  }, [router, session])
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     setLoading(true)
@@ -37,6 +42,7 @@ export const AuthForm = () => {
       setError('Wrong credentials...')
       setLoading(false)
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error)
       setError('Other error...')
       setLoading(false)

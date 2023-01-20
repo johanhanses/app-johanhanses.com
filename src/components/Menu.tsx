@@ -2,7 +2,6 @@
 
 import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { MenuItems } from './Header'
 
 interface MenuProps {
@@ -11,7 +10,6 @@ interface MenuProps {
 
 export const Menu = ({ menuItems }: MenuProps) => {
   const { data: session } = useSession()
-  const router = useRouter()
 
   return (
     <nav className="hidden md:block">
@@ -38,9 +36,8 @@ export const Menu = ({ menuItems }: MenuProps) => {
             <button
               onClick={async () => {
                 await signOut({
-                  callbackUrl: `${window.location.origin}`
+                  callbackUrl: `/`
                 })
-                router.refresh()
               }}
               className="block px-3 py-2 transition-colors duration-300 hover:text-yellow"
             >

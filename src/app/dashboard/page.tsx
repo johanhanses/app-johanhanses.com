@@ -1,5 +1,10 @@
-export const revalidate = 0
+import { DashboardHeader } from '@/components/DashboardHeader'
 
 export default async function Dashboard() {
-  return <div>Dashboard</div>
+  return (
+    <div>
+      <DashboardHeader />
+      Dashboard
+    </div>
+  )
 }
