@@ -37,10 +37,10 @@ export const Menu = ({ menuItems }: MenuProps) => {
           ) : (
             <button
               onClick={async () => {
-                router.refresh()
                 await signOut({
                   callbackUrl: `${window.location.origin}`
                 })
+                router.refresh()
               }}
               className="block px-3 py-2 transition-colors duration-300 hover:text-yellow"
             >
