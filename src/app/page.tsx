@@ -12,6 +12,7 @@ export default function Home() {
         src={me}
         alt="Johan Hanses"
         className="mb-12 aspect-auto h-16 w-16 rounded-full"
+        priority
       />
       <PageHeader>Johan Hanses</PageHeader>
       <TextBlock>
