@@ -43,7 +43,7 @@ export default function About() {
             elements/features, mainly using{' '}
             <ALink href="https://www.framer.com/motion/">Framer Motion.</ALink>
           </p>
-          <p>This text and the whole app wil be constantly changing.</p>
+          <p>This text and the whole app will be constantly changing.</p>
         </TextBlock>
       </div>
       <div className="flex justify-center md:pt-32 lg:w-1/2">
