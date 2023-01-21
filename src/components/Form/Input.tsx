@@ -21,7 +21,7 @@ export const Input = (props: ComponentPropsWithoutRef<'input'> & { togglevisibil
         <button
           type="button"
           onClick={() => setPasswordVisible(!passwordVisible)}
-          className="absolute top-2.5 right-3 transition-colors duration-200 hover:text-yellow"
+          className="absolute top-2.5 right-3 transition-colors duration-200 hover:text-teal-500"
         >
           {passwordVisible && <EyeSlashIcon className="h-4 w-4" />}
           {!passwordVisible && <EyeIcon className="h-4 w-4" />}

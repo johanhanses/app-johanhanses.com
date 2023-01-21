@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { FormEvent, useEffect, useState } from 'react'
 import { Button } from './Form/Button'
 import { Input } from './Form/Input'
-import { Spinner } from './Spinner'
+import { Spinner } from './Icons/Spinner'
 import { Toast } from './Toast'
 
 export const AuthForm = () => {

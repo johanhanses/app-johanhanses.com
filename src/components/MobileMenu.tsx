@@ -42,12 +42,18 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                         <XMarkIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
                       </button>
                     </div>
-                    <motion.div
+                    {/* <motion.div
                       initial={{ x: '-100%' }}
                       animate={{ x: '0%' }}
-                    >
-                      <div className="-my-2 mt-6 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                        {menuItems.map((item) => (
+                    > */}
+                    <div className="-my-2 mt-6 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+                      {menuItems.map((item, i) => (
+                        <motion.div
+                          initial={{ x: '-100%' }}
+                          animate={{ x: '0%' }}
+                          transition={{ delay: i * 0.1, type: 'tween' }}
+                          key={item.url}
+                        >
                           <Menu.Item key={item.title}>
                             <Link
                               href={item.url}
@@ -56,7 +62,14 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                               {item.title}
                             </Link>
                           </Menu.Item>
-                        ))}
+                        </motion.div>
+                      ))}
+                      <motion.div
+                        initial={{ x: '-100%' }}
+                        animate={{ x: '0%' }}
+                        transition={{ delay: Number(`0.${menuItems.length}`), type: 'tween' }}
+                        key="login/out"
+                      >
                         {!session ? (
                           <Link
                             onClick={close}
@@ -79,8 +92,9 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                             Log out
                           </button>
                         )}
-                      </div>
-                    </motion.div>
+                      </motion.div>
+                    </div>
+                    {/* </motion.div> */}
                   </Menu.Items>
                 </motion.div>
               )}

@@ -1,7 +1,7 @@
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-import { Github } from './Github'
-import { Linkedin } from './Linkedin'
+import { Github } from './Icons/Github'
+import { Linkedin } from './Icons/Linkedin'
 
 const links = [
   {

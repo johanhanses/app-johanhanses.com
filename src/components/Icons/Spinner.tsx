@@ -2,7 +2,7 @@ export const Spinner = ({ className }: { className?: string }) => (
   <div role="status">
     <svg
       aria-hidden="true"
-      className={`mr-2 animate-spin fill-yellow text-zinc-500 dark:text-zinc-400 ${
+      className={`mr-2 animate-spin fill-teal-500 text-zinc-500 dark:text-zinc-400 ${
         className ? className : 'h-4 w-4'
       }`}
       viewBox="0 0 100 101"

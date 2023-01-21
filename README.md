@@ -16,3 +16,4 @@ One more time...
 - ~Resume/CV behind Auth.~
 - Dashboard for adding content.
 - Editor.js adding for own content.
+- Change fonts to Cal Sans and Matter Display?

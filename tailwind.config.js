@@ -8,14 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        yellow: '#FFD65B'
-      },
       fontFamily: {
         playfair: ['var(--playfair)'],
         karla: ['var(--karla)']
       }
     }
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }

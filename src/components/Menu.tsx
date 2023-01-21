@@ -20,12 +20,12 @@ export const Menu = ({ menuItems }: MenuProps) => {
           <li key={item.title}>
             <Link
               href={item.url}
-              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-yellow ${
-                pathname === item.url && 'text-yellow'
+              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-teal-500 ${
+                pathname === item.url && 'text-teal-500'
               }`}
             >
               {pathname === item.url ? (
-                <span className="border-b border-yellow/40 pb-[11px]">{item.title}</span>
+                <span className="border-b border-teal-500/40 pb-[11px]">{item.title}</span>
               ) : (
                 <>{item.title}</>
               )}
@@ -33,15 +33,25 @@ export const Menu = ({ menuItems }: MenuProps) => {
           </li>
         ))}
         <li>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://cv.johanhanses.com"
+            className={`relative block px-3 py-2 transition-colors duration-300 hover:text-teal-500`}
+          >
+            CV
+          </a>
+        </li>
+        <li>
           {!session ? (
             <Link
               href="/login"
-              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-yellow ${
-                pathname === '/login' && 'text-yellow'
+              className={`relative block px-3 py-2 transition-colors duration-300 hover:text-teal-500 ${
+                pathname === '/login' && 'text-teal-500'
               }`}
             >
               {pathname === '/login' ? (
-                <span className="border-b border-yellow/40 pb-[11px]">Log in</span>
+                <span className="border-b border-teal-500/40 pb-[11px]">Log in</span>
               ) : (
                 <>Log in</>
               )}
@@ -53,7 +63,7 @@ export const Menu = ({ menuItems }: MenuProps) => {
                   callbackUrl: `/`
                 })
               }}
-              className="block px-3 py-2 transition-colors duration-300 hover:text-yellow"
+              className="block px-3 py-2 transition-colors duration-300 hover:text-teal-500"
             >
               Log out
             </button>
