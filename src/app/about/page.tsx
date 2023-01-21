@@ -31,6 +31,16 @@ export default function About() {
           Right now it hosts only the users table but as the app evolves I am planning to move my
           resume/cv and cover letters to the database from it&apos;s current home at Contentful.
         </p>
+        <p>
+          The goal is to have all content in the database and to use{' '}
+          <ALink href="https://editorjs.io/">editor.js</ALink> block editor to add and edit content
+          on all places around the app. basically building my own CMS
+        </p>
+        <p>
+          Another thing that will be available is small demos of various animated elements/features,
+          mainly using <ALink href="https://www.framer.com/motion/">Framer Motion.</ALink>
+        </p>
+        <p>This text and the whole app wil be constantly changing.</p>
       </TextBlock>
     </div>
   )
