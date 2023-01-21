@@ -40,8 +40,8 @@ export default function About() {
           </p>
           <p>
             Another thing that will be available is small demos of various animated
-            elements/features, mainly using{' '}
-            <ALink href="https://www.framer.com/motion/">Framer Motion.</ALink>
+            elements/features, mainly using the
+            <ALink href="https://www.framer.com/motion/">Framer Motion.</ALink> library.
           </p>
           <p>This text and the whole app will be constantly changing.</p>
         </TextBlock>
