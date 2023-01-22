@@ -10,10 +10,11 @@ One more time...
 - ~PlanetScale.~
 - ~Refactor auth to lib~
 - ~Make all components namned exports~
-- About the whole techStack
-- About me
+- ~About the whole techStack~
+- ~About me~
 - ~Active pages highlight in menu~
 - ~Resume/CV behind Auth.~
 - Dashboard for adding content.
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
+- ~Footer~
