@@ -23,7 +23,7 @@ export default function Home() {
         </p>
         <p>
           Obsessive self learner who likes to build things using bleeding edge technologies, mainly
-          within the JavaScript ecosystem. Interested in Web performance, a11y, UI and Cloud
+          within the JavaScript ecosystem. Interested in web performance, a11y, UI and cloud
           technologies.
         </p>
       </TextBlock>
