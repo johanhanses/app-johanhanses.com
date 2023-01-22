@@ -1,5 +1,6 @@
 import { AuthSessionProvider } from '@/components/AuthSessionProvider'
 import { ColorThemeProvider } from '@/components/ColorThemeProvider'
+import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Karla, Playfair_Display } from '@next/font/google'
 import './globals.css'
@@ -25,7 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorThemeProvider>
             <div className="relative mx-auto min-h-screen w-full max-w-7xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
               <Header />
-              <main className="min-h-screen px-4 pt-40 pb-24 md:px-8 lg:px-20">{children}</main>
+              <main className="min-h-[calc(100vh-6rem)] px-4 pt-40 pb-24 md:px-8 lg:px-20">
+                {children}
+              </main>
+              <Footer />
             </div>
           </ColorThemeProvider>
         </AuthSessionProvider>
