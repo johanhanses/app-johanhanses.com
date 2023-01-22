@@ -7,7 +7,7 @@ export default function About() {
   return (
     <article className="flex flex-col gap-8 md:flex-row">
       <div className="mt-4 md:mt-16 lg:w-1/2">
-        <PageHeader>About and why this?</PageHeader>
+        <PageHeader>About, why and what is this?</PageHeader>
         <TextBlock className="prose">
           <p>
             This is my attempt to make some sort of{' '}
