@@ -6,7 +6,7 @@ import { Skills } from './Skills'
 import { Work } from './Work'
 
 export default async function Cv() {
-  const cv = await prisma.cV.findUnique({
+  const cv = await prisma.cv.findUnique({
     where: {
       title: 'cv'
     }

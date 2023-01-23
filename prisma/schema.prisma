@@ -24,7 +24,7 @@ model CoverLetter {
   content   String?  @db.Text
 }
 
-model CV {
+model Cv {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime
