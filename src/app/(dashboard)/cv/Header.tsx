@@ -8,6 +8,7 @@ export const Header = ({ data }: { data: CvHeader }) => (
       <Image
         src={me}
         alt="me"
+        priority
       />
     </div>
     <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
