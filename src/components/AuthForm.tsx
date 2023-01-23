@@ -19,7 +19,7 @@ export const AuthForm = () => {
   const session = useSession()
 
   useEffect(() => {
-    if (session.status === 'authenticated') return router.push('/dashboard')
+    if (session.status === 'authenticated') return router.push('/cover-letter')
   }, [router, session])
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
