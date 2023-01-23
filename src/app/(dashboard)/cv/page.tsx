@@ -6,13 +6,13 @@ import { Skills } from './Skills'
 import { Work } from './Work'
 
 export default async function Cv() {
-  const cv = await prisma.cv.findUnique({
+  const data = await prisma.cv.findUnique({
     where: {
       title: 'cv'
     }
   })
 
-  const { header, skills, work, education } = cv?.content as unknown as CvContent
+  const { header, skills, work, education } = data?.content as unknown as CvContent
 
   return (
     <div className="space-y-16 overflow-y-auto text-base md:space-y-24">
