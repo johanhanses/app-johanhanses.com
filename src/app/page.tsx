@@ -1,5 +1,5 @@
 import { ALink } from '@/components/ALink'
-import { PageHeader } from '@/components/PageHeader'
+import { PageHeading } from '@/components/PageHeading'
 import { Socials } from '@/components/Socials'
 import { TextBlock } from '@/components/TextBlock'
 import Image from 'next/image'
@@ -14,7 +14,7 @@ export default function Home() {
         className="mb-12 aspect-auto h-16 w-16 rounded-full"
         priority
       />
-      <PageHeader>Johan Hanses</PageHeader>
+      <PageHeading>Johan Hanses</PageHeading>
       <TextBlock>
         <p>TypeScript/Frontend developer based in Falun, Sweden.</p>
         <p>

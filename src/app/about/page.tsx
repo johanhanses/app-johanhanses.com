@@ -1,13 +1,13 @@
 import { ALink } from '@/components/ALink'
 import { Rocket } from '@/components/Icons/Rocket'
-import { PageHeader } from '@/components/PageHeader'
+import { PageHeading } from '@/components/PageHeading'
 import { TextBlock } from '@/components/TextBlock'
 
 export default function About() {
   return (
     <article className="flex flex-col gap-8 md:flex-row">
       <div className="mt-4 md:mt-16 lg:w-1/2">
-        <PageHeader>About, why and what is this?</PageHeader>
+        <PageHeading>About, why and what is this?</PageHeading>
         <TextBlock className="prose">
           <p>
             This is my attempt to make some sort of{' '}

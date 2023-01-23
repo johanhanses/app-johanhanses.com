@@ -23,8 +23,12 @@ let menuItems: MenuItems[] = [
     url: '/about'
   },
   {
-    title: 'Dashboard',
-    url: '/dashboard'
+    title: 'CV',
+    url: '/cv'
+  },
+  {
+    title: 'Cover letter',
+    url: '/cover-letter'
   }
 ]
 
@@ -41,7 +45,9 @@ export const Header = () => {
   useEffect(() => {
     if (session) setMenuItemsInState(menuItems)
     if (!session) {
-      const items = menuItems.filter((item) => item.title !== 'Dashboard')
+      const items = menuItems
+        .filter((item) => item.title !== 'CV')
+        .filter((item) => item.title !== 'Cover letter')
       setMenuItemsInState(items)
     }
   }, [session])
