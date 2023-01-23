@@ -15,3 +15,19 @@ model User {
   username  String   @unique
   password  String
 }
+
+model CoverLetter {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  recipient String   @unique
+  content   String?  @db.Text
+}
+
+model CV {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  title     String   @unique
+  content   Json?
+}
