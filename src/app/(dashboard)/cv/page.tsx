@@ -5,12 +5,18 @@ import { Header } from './Header'
 import { Skills } from './Skills'
 import { Work } from './Work'
 
-export default async function Cv() {
-  const data = await prisma.cv.findUnique({
+const getData = async () => {
+  const res = await prisma.cv.findUnique({
     where: {
       title: 'cv'
     }
   })
+  if (!res) throw new Error('failed to fetch data')
+  return res
+}
+
+export default async function Cv() {
+  const data = await getData()
 
   const { header, skills, work, education } = data?.content as unknown as CvContent
 
