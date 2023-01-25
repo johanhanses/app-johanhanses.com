@@ -63,22 +63,10 @@ export const MobileMenu = ({ menuItems }: MobileMenuProps) => {
                       <motion.div
                         initial={{ x: '-100%' }}
                         animate={{ x: '0%' }}
-                        transition={{ delay: Number(`0.${menuItems.length}`), type: 'tween' }}
-                        key="cv"
-                      >
-                        <a
-                          rel="noreferrer"
-                          target="_blank"
-                          href="https://cv.johanhanses.com"
-                          className="block py-2"
-                        >
-                          CV
-                        </a>
-                      </motion.div>
-                      <motion.div
-                        initial={{ x: '-100%' }}
-                        animate={{ x: '0%' }}
-                        transition={{ delay: Number(`0.${menuItems.length}`) + 0.1, type: 'tween' }}
+                        transition={{
+                          delay: Number(`0.${menuItems.length}`) + 0.1,
+                          type: 'tween'
+                        }}
                         key="login/out"
                       >
                         {!session ? (

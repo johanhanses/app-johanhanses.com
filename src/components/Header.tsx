@@ -50,7 +50,7 @@ export const Header = () => {
     if (session) setMenuItemsInState(menuItems)
     if (!session) {
       const items = menuItems
-        .filter((item) => item.title !== 'CV')
+        // .filter((item) => item.title !== 'CV')
         .filter((item) => item.title !== 'Cover letter')
       setMenuItemsInState(items)
     }

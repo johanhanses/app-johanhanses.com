@@ -33,16 +33,6 @@ export const Menu = ({ menuItems }: MenuProps) => {
           </li>
         ))}
         <li>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://cv.johanhanses.com"
-            className={`relative block px-3 py-2 transition-colors duration-300 hover:text-teal-500`}
-          >
-            CV
-          </a>
-        </li>
-        <li>
           {!session ? (
             <Link
               href="/login"
