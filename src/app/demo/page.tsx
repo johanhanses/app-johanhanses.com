@@ -6,7 +6,7 @@ export default function Demo() {
   return (
     <article>
       <PageHeading>IOS Photo gallery</PageHeading>
-      <div className="min-h-[calc(100vh-24rem)] gap-4 lg:flex">
+      <div className="min-h-[calc(100vh-20rem)] gap-4 lg:flex">
         <div className="lg:w-1/2">
           <TextBlock className="prose pr-8">
             <p>
@@ -26,7 +26,7 @@ export default function Demo() {
         </div>
         <iframe
           src="https://transitions.johanhanses.com"
-          className="h-[calc(100vh-24rem)] w-full lg:w-1/2"
+          className="min-h-[calc(100vh-20rem)] w-full lg:w-1/2"
         />
       </div>
     </article>
