@@ -18,3 +18,5 @@ One more time...
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
 - ~Footer~
+- ~Fix cover-letter scaling~
+- Add UI demo page

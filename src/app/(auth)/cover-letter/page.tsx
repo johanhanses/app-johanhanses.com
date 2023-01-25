@@ -36,7 +36,7 @@ export default async function coverLetter() {
             src={me}
             alt="me"
             priority
-            className="order-first mx-auto h-full rounded-md md:order-last md:mx-0"
+            className="mx-a order-first h-full rounded-md md:order-last md:mx-0"
           />
         </div>
       </article>

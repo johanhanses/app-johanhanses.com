@@ -23,6 +23,10 @@ let menuItems: MenuItems[] = [
     url: '/about'
   },
   {
+    title: 'Demos',
+    url: '/demo'
+  },
+  {
     title: 'CV',
     url: '/cv'
   },
