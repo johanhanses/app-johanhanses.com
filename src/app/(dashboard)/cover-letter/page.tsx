@@ -18,16 +18,15 @@ const getData = async () => {
   return null
 }
 
-export default async function coverLetter() {
+export default async function coverLetter(props) {
   const data = await getData()
 
-  if (data) {
-    const { res, session } = data
+  if (data?.res?.content && data?.session) {
     return (
       <>
-        <PageHeading>Hello {session.user?.name}!</PageHeading>
+        <PageHeading>Hello {data.session.user?.name}!</PageHeading>
         <div
-          dangerouslySetInnerHTML={{ __html: res?.content as string }}
+          dangerouslySetInnerHTML={{ __html: data.res.content }}
           className="prose mb-8 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-lg"
         />
       </>
@@ -35,7 +34,7 @@ export default async function coverLetter() {
   }
   return (
     <div className="mb-8 text-center text-base leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-lg">
-      No Cover letter for this user
+      <p>No Cover letter for this user</p>
     </div>
   )
 }
