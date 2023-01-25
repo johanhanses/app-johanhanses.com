@@ -18,7 +18,7 @@ const getData = async () => {
   return null
 }
 
-export default async function coverLetter(props) {
+export default async function coverLetter() {
   const data = await getData()
 
   if (data?.res?.content && data?.session) {
