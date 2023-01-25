@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorThemeProvider>
             <div className="relative mx-auto min-h-screen w-full max-w-7xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">
               <Header />
-              <main className="min-h-[calc(100vh-6rem)] px-4 pt-40 pb-24 md:px-8 lg:px-20">
+              <main className="min-h-[calc(100vh-6rem)] px-4 pb-24 pt-40 md:px-8 lg:px-20">
                 {children}
               </main>
               <Footer />
