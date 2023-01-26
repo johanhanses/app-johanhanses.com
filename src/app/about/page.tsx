@@ -20,7 +20,7 @@ export default function About() {
             <ALink href="https://github.com/johanhanses/app-johanhanses.com">GitHub</ALink>
           </p>
           <p>
-            It will have static pages, server and client- components, it will implements{' '}
+            It will have static pages, server and client- components, it will implement{' '}
             <ALink href="https://next-auth.js.org/">NextAuth</ALink> and{' '}
             <ALink href="https://github.com/pacocoursey/next-themes">next-themes</ALink> for
             toggling dark mode, all adopted and tweaked to work with all the new beta-features of

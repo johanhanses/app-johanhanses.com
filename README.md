@@ -6,7 +6,7 @@ One more time...
 - ~Tailwind-Prettier or eslint from antfu?~
 - ~Make next auth work in appDir.~ Hells yes!!
 - ~Make color mode work in appDir.~
-- ~Prisma.~
+- ~Prisma ORM.~
 - ~PlanetScale.~
 - ~Refactor auth to lib~
 - ~Make all components namned exports~
@@ -20,3 +20,4 @@ One more time...
 - ~Footer~
 - ~Fix cover-letter scaling~
 - Add UI demo page
+- Make main nav a server component
