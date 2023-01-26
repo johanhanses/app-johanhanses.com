@@ -57,7 +57,7 @@ export const Header = () => {
   }, [session])
 
   return (
-    <header className="absolute left-0 right-0 h-24 w-full max-w-7xl sm:-ml-4 md:ml-0">
+    <header className="absolute left-0 right-0 z-50 h-24 w-full max-w-7xl sm:-ml-4 md:ml-0">
       <div className="fixed h-24 w-full max-w-7xl">
         <motion.div
           style={{

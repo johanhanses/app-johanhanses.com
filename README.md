@@ -14,10 +14,11 @@ One more time...
 - ~About me~
 - ~Active pages highlight in menu~
 - ~Resume/CV behind Auth.~
+- ~Footer~
+- ~Fix cover-letter scaling~
+
+- Add UI demo page
+- Make main nav a server component
 - Dashboard for adding content.
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
-- ~Footer~
-- ~Fix cover-letter scaling~
-- Add UI demo page
-- Make main nav a server component
