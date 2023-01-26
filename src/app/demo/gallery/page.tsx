@@ -1,7 +1,7 @@
 import { ALink } from '@/components/ALink'
 import { PageHeading } from '@/components/PageHeading'
 import { TextBlock } from '@/components/TextBlock'
-import { BackButton } from '../BackButton'
+import { BackButton } from '../../../components/BackButton'
 
 export default function Gallery() {
   return (
