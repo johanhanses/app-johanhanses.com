@@ -1,6 +1,6 @@
 import { CvHeader } from '@/interface'
 import Image from 'next/image'
-import me from '../../../../public/jag.png'
+import me from '../../../../public/images/jag.png'
 
 export const Header = ({ data }: { data: CvHeader }) => (
   <section className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40 lg:rounded-tr-md">

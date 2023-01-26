@@ -2,7 +2,7 @@ import { PageHeading } from '@/components/PageHeading'
 import { prisma } from '@/lib/prisma'
 import { unstable_getServerSession } from 'next-auth'
 import Image from 'next/image'
-import me from '../../../../public/kallslatten.jpeg'
+import me from '../../../../public/images/kallslatten.jpeg'
 
 const getData = async () => {
   const session = await unstable_getServerSession()

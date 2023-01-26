@@ -3,7 +3,7 @@ import { PageHeading } from '@/components/PageHeading'
 import { Socials } from '@/components/Socials'
 import { TextBlock } from '@/components/TextBlock'
 import Image from 'next/image'
-import me from '../../public/joag2.jpg'
+import me from '../../public/images/joag2.jpg'
 
 export default function Home() {
   return (
