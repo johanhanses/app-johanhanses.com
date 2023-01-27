@@ -1,9 +1,13 @@
-import { DashboardHeader } from '@/components/DashboardHeader'
+import { unstable_getServerSession } from 'next-auth'
+import { redirect } from 'next/navigation'
 
-export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+export default async function DashboardLayout({ children }: { children: React.ReactNode }) {
+  const session = await unstable_getServerSession()
+
+  if (!session) return redirect('/login')
+
   return (
-    <div className="">
-      <DashboardHeader />
+    <div>
       <section className="py-12">{children}</section>
     </div>
   )

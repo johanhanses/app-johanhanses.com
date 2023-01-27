@@ -31,7 +31,7 @@ export default function Demo() {
           </p>
         </TextBlock>
 
-        <section className="grid w-full auto-rows-fr justify-center gap-4 sm:grid-cols-2 md:grid-cols-3	">
+        <section className="grid w-full auto-rows-fr justify-center gap-8 sm:grid-cols-2 md:grid-cols-3	">
           {demos.map((demo) => (
             <Link
               key={demo.url}
