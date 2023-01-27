@@ -20,6 +20,7 @@ One more time...
 - ~Add UI demo page~~
 - Add more demos
 - Make main nav a server component
+- Move auth guard from client component to auth layout
 - Dashboard for adding content.
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
