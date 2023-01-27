@@ -41,7 +41,12 @@ export default function About() {
           <p>
             Another thing that will be available is small demos of various animated
             elements/features, mainly using the{' '}
-            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library.
+            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. Since
+            I&apos;ve recently discovered the{' '}
+            <ALink href="https://github.com/jamiebuilds/tailwindcss-animate">
+              tailwindcss-animate
+            </ALink>{' '}
+            library I am gonna explore that as well, and maybe share if I build something cool.
           </p>
           <p>This text and the whole app will be constantly changing.</p>
         </TextBlock>
