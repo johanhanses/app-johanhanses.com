@@ -17,7 +17,8 @@ One more time...
 - ~Footer~
 - ~Fix cover-letter scaling~
 
-- Add UI demo page
+- ~Add UI demo page~~
+- Add more demos
 - Make main nav a server component
 - Dashboard for adding content.
 - Editor.js adding for own content.
