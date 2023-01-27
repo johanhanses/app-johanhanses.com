@@ -1,9 +1,7 @@
-import { DashboardHeader } from '@/components/DashboardHeader'
-
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="">
-      <DashboardHeader />
+      {/* <DashboardHeader /> */}
       <section className="py-12">{children}</section>
     </div>
   )
