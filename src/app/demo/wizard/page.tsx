@@ -26,7 +26,7 @@ export default function Wizard() {
         </div>
         <iframe
           src="https://steps.johanhanses.com"
-          className="min-h-[calc(100vh-30rem)] w-full lg:w-1/2"
+          className="min-h-[calc(100vh-20rem)] w-full lg:w-1/2"
         />
       </div>
     </article>
