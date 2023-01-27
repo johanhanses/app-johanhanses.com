@@ -1,8 +1,9 @@
 import { unstable_getServerSession } from 'next-auth'
+import { use } from 'react'
 import { ALink } from './ALink'
 
-export const Footer = async () => {
-  const session = await unstable_getServerSession()
+export const Footer = () => {
+  const session = use(unstable_getServerSession())
 
   return (
     <footer className="h-24">
