@@ -23,7 +23,7 @@ export default function Demo() {
     <article className="mx-auto lg:w-2/3">
       <PageHeading>Demo projects</PageHeading>
 
-      <div className="min-h-[calc(100vh-20rem)]">
+      <div className="min-h-[calc(100vh-28rem)]">
         <TextBlock className="prose">
           <p>
             A collection of different small UI demos where I test different animation techniques and
@@ -42,7 +42,7 @@ export default function Demo() {
                 priority
                 alt="preview"
                 src={demo.thumbnail}
-                className="aspect-auto h-auto w-full transition duration-300 group-hover:scale-105"
+                className="aspect-auto h-full w-full transition duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/10 transition duration-300 group-hover:bg-black/20" />
               <h3 className="absolute bottom-12 w-full rounded-md bg-black/30 text-center">
