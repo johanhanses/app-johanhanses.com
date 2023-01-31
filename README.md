@@ -25,3 +25,4 @@ One more time...
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
 - Make main nav a server component
+- set a fixed height on the login button
