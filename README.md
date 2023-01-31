@@ -17,12 +17,13 @@ One more time...
 - ~Footer~
 - ~Fix cover-letter scaling~
 - ~Move auth guard from client component to auth layout~
-- ~Add UI demo page~~
+- ~Add UI demo page~
+- ~Fix iframe width and height on all devices~
 
-- Fix iframe width and height on all devices
+- Set a fixed height on the login button
 - Add more demos
 - Dashboard for adding content.
 - Editor.js adding for own content.
 - Change fonts to Cal Sans and Matter Display?
 - Make main nav a server component
-- set a fixed height on the login button
+- Fix initial render of sun when system theme is dark
