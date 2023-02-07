@@ -21,6 +21,7 @@ One more time...
 - ~Fix iframe width and height on all devices~
 - ~Set a fixed height on the login button~
 
+- Redesign demo landing page.
 - Add more demos
 - Dashboard for adding content.
 - Editor.js adding for own content.
