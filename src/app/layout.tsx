@@ -1,3 +1,4 @@
+import { AnalyticsWrapper } from '@/components/Analytics'
 import { AuthSessionProvider } from '@/components/AuthSessionProvider'
 import { ColorThemeProvider } from '@/components/ColorThemeProvider'
 import { Footer } from '@/components/Footer'
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </main>
               <Footer />
             </div>
+            <AnalyticsWrapper />
           </ColorThemeProvider>
         </AuthSessionProvider>
       </body>
