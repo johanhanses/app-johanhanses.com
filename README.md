@@ -2,7 +2,7 @@ One more time...
 
 #TODO
 
-- [ ] Change log? view each commit somewhere in app?
+- [ ] Changelog? view each commit somewhere in app?
 - [ ] Add keywords, spice up SEO.
 - [ ] Redesign demo landing page.
 - [ ] Add more demos
