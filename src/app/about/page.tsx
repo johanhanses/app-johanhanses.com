@@ -2,6 +2,7 @@ import { ALink } from '@/components/ALink'
 import { Rocket } from '@/components/Icons/Rocket'
 import { PageHeading } from '@/components/PageHeading'
 import { TextBlock } from '@/components/TextBlock'
+import Link from 'next/link'
 
 export default function About() {
   return (
@@ -20,8 +21,8 @@ export default function About() {
             <ALink href="https://github.com/johanhanses/app-johanhanses.com">GitHub</ALink>
           </p>
           <p>
-            It will have static pages, server and client- components, it will implement{' '}
-            <ALink href="https://next-auth.js.org/">NextAuth</ALink> and{' '}
+            It has static pages, react server componets and traditional client components, it will
+            implements <ALink href="https://next-auth.js.org/">NextAuth</ALink> and{' '}
             <ALink href="https://github.com/pacocoursey/next-themes">next-themes</ALink> for
             toggling dark mode, all adopted and tweaked to work with all the new beta-features of
             Next.js 13 app-dir.
@@ -30,23 +31,28 @@ export default function About() {
             Authentification is, as previously mentioned, implemented using the NextAuth package and
             the app uses <ALink href="https://www.prisma.io/">Prisma</ALink> ORM to define and query
             the MySQL database hosted at <ALink href="https://planetscale.com/">PlanetScale</ALink>.
-            Right now it hosts only the users table but as the app evolves I am planning to move my
-            resume/cv and cover letters to the database from it&apos;s current home at Contentful.
+            Right now it hosts only users, cv and cover-letter but the goal is to have all content
+            in the database and to use <ALink href="https://editorjs.io/">editor.js</ALink> block
+            editor to add and edit content in all places around the app. basically building my own
+            CMS. Just because it&apos;s fun, and as a contrast to all the MDX-based content
+            developers usually build for themself.
           </p>
           <p>
-            The goal is to have all content in the database and to use{' '}
-            <ALink href="https://editorjs.io/">editor.js</ALink> block editor to add and edit
-            content on all places around the app. basically building my own CMS
-          </p>
-          <p>
-            Another thing that will be available is small demos of various animated
+            Another thing that will is available is small demos of various animated
             elements/features, mainly using the{' '}
-            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. Since
+            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. But since
             I&apos;ve recently discovered the{' '}
             <ALink href="https://github.com/jamiebuilds/tailwindcss-animate">
               tailwindcss-animate
             </ALink>{' '}
-            library I am gonna explore that as well, and maybe share if I build something cool.
+            library I am gonna explore that, and maybe add to the{' '}
+            <Link
+              href="/demo"
+              className="text-teal-500 hover:text-teal-600 hover:underline dark:hover:text-teal-400"
+            >
+              demo
+            </Link>{' '}
+            page if I build something cool.
           </p>
           <p>This text and the whole app will be constantly changing.</p>
         </TextBlock>
