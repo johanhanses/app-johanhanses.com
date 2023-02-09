@@ -2,6 +2,7 @@ import { PageHeading } from '@/components/PageHeading'
 import { TextBlock } from '@/components/TextBlock'
 import Image from 'next/image'
 import Link from 'next/link'
+import calendar from '../../../public/images/demo-thumbnails/calendar.png'
 import steps from '../../../public/images/demo-thumbnails/steps.png'
 import carousel from '../../../public/images/demo-thumbnails/transitions.png'
 
@@ -15,6 +16,11 @@ const demos = [
     url: '/demo/wizard',
     thumbnail: steps,
     title: 'Animated SVG/Wizard'
+  },
+  {
+    url: '/demo/calendar',
+    thumbnail: calendar,
+    title: 'Swipeable Calendar Animation'
   }
 ]
 
@@ -45,7 +51,7 @@ export default function Demo() {
                 className="aspect-auto h-full w-full transition duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/10 transition duration-300 group-hover:bg-black/20" />
-              <h3 className="absolute bottom-12 w-full rounded-md bg-black/30 text-center">
+              <h3 className="absolute bottom-12 w-full rounded-sm bg-black/70 text-center">
                 {demo.title}
               </h3>
             </Link>
