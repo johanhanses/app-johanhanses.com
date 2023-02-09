@@ -8,7 +8,7 @@ export default function Wizard() {
     <article className="relative">
       <BackButton />
 
-      <PageHeading className="pt-4 lg:pt-24">Animation a SVG path wizard</PageHeading>
+      <PageHeading className="pt-4 lg:pt-24">Animating SVG path / wizard</PageHeading>
 
       <div className="min-h-[calc(100vh-20rem)] gap-4 lg:flex">
         <div className="lg:w-1/2">
