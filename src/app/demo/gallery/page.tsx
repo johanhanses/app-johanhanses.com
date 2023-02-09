@@ -30,7 +30,7 @@ export default function Gallery() {
         </div>
         <iframe
           src="https://transitions.johanhanses.com"
-          className="min-h-[calc(100vh-20rem)] w-full lg:w-1/2"
+          className="h-[550px] w-full md:h-[800px] lg:h-[600px] lg:w-1/2"
         />
       </div>
     </article>
