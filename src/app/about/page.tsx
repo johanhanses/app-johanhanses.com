@@ -34,18 +34,17 @@ export default function About() {
             Right now it hosts only users, cv and cover-letter but the goal is to have all content
             in the database and to use <ALink href="https://editorjs.io/">editor.js</ALink> block
             editor to add and edit content in all places around the app. basically building my own
-            CMS. Just because it&apos;s fun, and as a contrast to all the MDX-based content
-            developers usually build for themself.
+            CMS, because it&apos;s fun, and as a contrast to all the MDX-based content developers
+            usually build for themself.
           </p>
           <p>
-            Another thing that will is available is small demos of various animated
-            elements/features, mainly using the{' '}
-            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. But since
-            I&apos;ve recently discovered the{' '}
+            Another thing that is available is small demos of various animated elements/features,
+            mainly using the <ALink href="https://www.framer.com/motion/">Framer Motion</ALink>{' '}
+            library. But since I&apos;ve recently discovered the{' '}
             <ALink href="https://github.com/jamiebuilds/tailwindcss-animate">
               tailwindcss-animate
             </ALink>{' '}
-            library I am gonna explore that, and maybe add to the{' '}
+            library I am gonna explore that too, and maybe add to the{' '}
             <Link
               href="/demo"
               className="text-teal-500 hover:text-teal-600 hover:underline dark:hover:text-teal-400"
