@@ -14,8 +14,8 @@ export default function Gallery() {
         <div className="lg:w-1/2">
           <TextBlock className="prose pr-8">
             <p>
-              Enter and exit animations of month title and it&apos;s days. The height of the card
-              container also has an animation when it&apos;s height changes.
+              Enter and exit animations of month title and its days. The height of the card
+              container also has an animation when its height changes.
             </p>
             <p>
               <ALink href="https://calendar.johanhanses.com">calendar.johanhanses.com</ALink>
