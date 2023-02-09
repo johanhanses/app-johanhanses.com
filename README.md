@@ -2,6 +2,16 @@ One more time...
 
 #TODO
 
+- [ ] Change log? view each commit somewhere in app?
+- [ ] Add keywords, spice up SEO.
+- [ ] Redesign demo landing page.
+- [ ] Add more demos
+- [ ] Dashboard for adding content.
+- [ ] Editor.js adding for own content.
+- [ ] Change fonts to Cal Sans and Matter Display?
+- [ ] Make main nav a server component
+- [ ] Fix initial render of sun when system theme is dark
+
 - [x] Decide which icon lib to use.
 - [x] Tailwind-Prettier or eslint from antfu?
 - [x] Make next auth work in appDir.~ Hells yes!
@@ -20,13 +30,3 @@ One more time...
 - [x] Add UI demo page
 - [x] Fix iframe width and height on all devices
 - [x] Set a fixed height on the login button
-
-- [] Change log? view each commit somewhere in app?
-- [] Add keywords, spice up SEO.
-- [] Redesign demo landing page.
-- [] Add more demos
-- [] Dashboard for adding content.
-- [] Editor.js adding for own content.
-- [] Change fonts to Cal Sans and Matter Display?
-- [] Make main nav a server component
-- [] Fix initial render of sun when system theme is dark
