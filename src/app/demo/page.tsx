@@ -20,7 +20,7 @@ const demos = [
   {
     url: '/demo/calendar',
     thumbnail: calendar,
-    title: 'Swipeable Calendar Animation'
+    title: 'Calendar enter and exit animations'
   }
 ]
 

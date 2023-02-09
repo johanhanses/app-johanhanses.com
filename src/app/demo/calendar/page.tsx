@@ -8,7 +8,7 @@ export default function Gallery() {
     <article className="relative">
       <BackButton />
 
-      <PageHeading className="pt-4 lg:pt-24">Swipeable Calendar Animation</PageHeading>
+      <PageHeading className="pt-4 lg:pt-24">Calendar enter and exit animations</PageHeading>
 
       <div className="min-h-[calc(100vh-20rem)] gap-4 lg:flex">
         <div className="lg:w-1/2">
