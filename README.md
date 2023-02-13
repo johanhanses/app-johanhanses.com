@@ -12,6 +12,7 @@ One more time...
 - [ ] Change fonts to Cal Sans and Matter Display?
 - [ ] Make main nav a server component
 - [ ] Fix initial render of sun when system theme is dark
+- [ ] Check all pages with VoiceOver
 
 - [x] Decide which icon lib to use.
 - [x] Tailwind-Prettier or eslint from antfu?
