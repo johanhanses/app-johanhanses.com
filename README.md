@@ -2,6 +2,7 @@ One more time...
 
 #TODO
 
+- [ ] Demo: Make demo/toy search with results presented in a server component
 - [ ] Add this todo somewhere in app / Changelog page?
 - [ ] Add keywords, spice up SEO.
 - [ ] Redesign demo landing page.
