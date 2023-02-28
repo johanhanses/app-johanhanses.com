@@ -38,13 +38,13 @@ export default function About() {
             usually build for themself.
           </p>
           <p>
-            Another thing that is available is small demos of various animated elements/features,
-            mainly using the <ALink href="https://www.framer.com/motion/">Framer Motion</ALink>{' '}
-            library. But since I&apos;ve recently discovered the{' '}
+            Also available is small demos of various animated UI elements/features, mainly using the{' '}
+            <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. I&apos;ve
+            also recently discovered the{' '}
             <ALink href="https://github.com/jamiebuilds/tailwindcss-animate">
               tailwindcss-animate
             </ALink>{' '}
-            library I am gonna explore that too, and maybe add to the{' '}
+            library and are aiming to explore that too, and maybe add something to the{' '}
             <Link
               href="/demo"
               className="text-teal-500 hover:text-teal-600 hover:underline dark:hover:text-teal-400"

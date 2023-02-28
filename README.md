@@ -1,4 +1,4 @@
-One more time...
+johanhanses.com using Next.js 13, React 18, Server components, TailwindCSS, Framer Motion, Prisma ORM and PlanetScale.
 
 #TODO
 
