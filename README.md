@@ -1,6 +1,6 @@
 johanhanses.com using Next.js 13, React 18, Server components, TailwindCSS, Framer Motion, Prisma ORM and PlanetScale.
 
-#TODO
+# TODO
 
 - [ ] Demo: Make demo/toy search with results presented in a server component
 - [ ] Add this todo somewhere in app / Changelog page?
