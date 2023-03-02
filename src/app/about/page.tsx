@@ -40,7 +40,7 @@ export default function About() {
           <p>
             Also available is small demos of various animated UI elements/features, mainly using the{' '}
             <ALink href="https://www.framer.com/motion/">Framer Motion</ALink> library. I&apos;ve
-            also recently discovered the{' '}
+            recently discovered the{' '}
             <ALink href="https://github.com/jamiebuilds/tailwindcss-animate">
               tailwindcss-animate
             </ALink>{' '}
