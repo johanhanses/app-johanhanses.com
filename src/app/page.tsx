@@ -19,7 +19,7 @@ export default function Home() {
         <p>TypeScript/Frontend developer based in Falun, Sweden.</p>
         <p>
           Building HR-Tech at <ALink href="https://worklygroup.com">Workly</ALink> using TypeScript,
-          Nextjs and React Native.
+          Next.js and React Native.
         </p>
         <p>
           Obsessive self learner who likes to build things using bleeding edge technologies, mainly
