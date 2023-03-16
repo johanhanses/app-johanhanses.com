@@ -15,7 +15,7 @@ export default function About() {
             <ALink href="https://www.danielsieger.com/blog/2021/05/30/digital-gardens.html">
               digital garden
             </ALink>
-            /playground to test or show of web/design/code related stuff . It is made using{' '}
+            /playground to test or show off web/design/code related stuff . It is made using{' '}
             <ALink href="https://beta.nextjs.org/docs">Next.js 13</ALink> with the experimental app
             directory/new router using server components. The code is available at{' '}
             <ALink href="https://github.com/johanhanses/app-johanhanses.com">GitHub</ALink>
