@@ -1,3 +1,5 @@
+# Abandoned/Inactive for now. This project has not been updated to current cversion of Next 13 and is no longer depoloyed.
+
 johanhanses.com using Next.js 13, React 18, Server components, TailwindCSS, Framer Motion, Prisma ORM and PlanetScale.
 
 ## TODO
